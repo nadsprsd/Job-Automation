@@ -1,0 +1,8 @@
+<!-- job_automation_app/templates/add_resume.html -->
+<h2>Add Resume</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
+
